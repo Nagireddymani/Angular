@@ -1,0 +1,91 @@
+<h2><b>Contacts Form</b></h2>
+<hr>
+<form #addcontact="ngForm" (ngSubmit)="onClickSubmit(addcontact.value)" class="form-group">
+    <table>
+        <tr>
+                    <td><label for="cId">ID</label></td>
+                    <td><input type="number" id="cId" name="contactId" placeholder="contactId" class="form-control" ngModel #contactId="ngModel" required></td>
+                    <span *ngIf="contactId.invalid && contactId.touched" class="alert-danger"> Enter Id</span>    
+        </tr>
+        <tr>
+                    <td><label for="fName">First Name</label></td>
+                    <td><input type="text" id="fName" name="firstName" placeholder="FirstName" class="form-control"  ngModel #firstName="ngModel" required></td>
+                    <span *ngIf="firstName.invalid && firstName.touched" class="alert-danger"> Enter FirstName</span>
+        </tr>
+        <tr>
+                    <td><label for="lName">Last Name</label></td>  
+                    <td><input type="text" id="lName" name="lastName" placeholder="LastName" class="form-control" ngModel #lastName="ngModel" required></td>
+                    <span *ngIf="lastName.invalid && lastName.touched" class="alert-danger"> Enter LastName</span>
+        </tr>
+        <tr>
+                    <td><label for="mNumber">Mobile Number</label></td>
+                    <td><input type="number" id="mNumber" name="mobileNumber" placeholder="Mobile Number" class="form-control" ngModel #mobileNumber="ngModel" min="10" max="10"
+                        required></td>
+                    <span *ngIf="mobileNumber.invalid && mobileNumber.touched" class="alert-danger"> Enter Mobile Number</span>
+        </tr>
+        <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="mailId" placeholder="email" class="form-control" ngModel #mailId="ngModel" required></td>
+                    <span *ngIf="mailId.invalid && mailId.touched" class="alert-danger"> Enter Mail</span>
+        </tr>
+        <tr>
+                    <td><label for="dob">Date Of Birth</label></td>
+                    <td><input type="date" id="dob" name="DOB" placeholder="DateOfBirth" class="form-control" ngModel #DOB="ngModel" required></td>
+                    <span *ngIf="DOB.invalid && DOB.touched" class="alert-danger"> Enter Date Of Birth</span>
+        </tr>
+        <tr>
+                    <td><label for="dNo">Door No</label></td>
+                    <td><input type="number" id="dNo" name="doorNO" placeholder="door number" class="form-control" ngModel #doorNo="ngModel"required></td>
+                    <span *ngIf="doorNo.invalid && doorNo.touched" class="alert-danger"> Enter doorNo</span>
+        </tr>
+        <tr>
+                    <td><label for="aName">Appartment Name          </label></td>
+                    <td><input type="text" id="aName" name="appartmentName" placeholder="Appartment Name" class="form-control" ngModel #appartmentName="ngModel" required></td>
+                    <span *ngIf="appartmentName.invalid && appartmentName.touched" class="alert-danger"> Enter Appartment Name</span>
+        </tr>
+        <tr>
+                    <td><label for="str">Street</label></td>
+                    <td><input type="text" id="str" name="street" placeholder="Street" class="form-control" ngModel #street="ngModel" required></td>
+                    <span *ngIf="street.invalid && street.touched" class="alert-danger"> Enter Street </span>
+        </tr>
+        <tr>
+                    <td><label for="city">City</label></td>
+                    <td>
+                        <select id="city" name="city" class="form-control" ngModel #city="ngModel" required>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Visakapatanam">Visakapatanam</option>
+                        </select>    
+                    </td>
+                    <span *ngIf="city.invalid && city.touched" class="alert-danger"> Enter city</span>
+        </tr>
+        <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <select id="country" name="country" class="form-control" ngModel #country="ngModel" required>
+                            <option value="Africa">Africa</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                            <option value="USA">USA</option>
+                            <option value="India">India</option>
+                            <option value="Srilanka">Srilanka</option>
+                        </select>
+                    </td>
+                    <span *ngIf="country.invalid && country.touched" class="alert-danger"> Enter country</span>
+        </tr>   
+        <tr>
+                    <td><label for="pNo">Pincode</label></td>
+                    <td><input type="number" id="pNo" placeholder="pincode" name="pincode" class="form-control"  ngModel #pincode="ngModel" required></td>
+                    <span *ngIf="pincode.invalid && pincode.touched" class="alert-danger"> Enter pincode</span>
+        </tr>
+        <tr><button type="submit" class="btn btn-success" [disabled]="addcontact.invalid">AddContact</button></tr>
+
+    </table>
+</form>

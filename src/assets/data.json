@@ -1,0 +1,92 @@
+{
+
+    "groups" : [
+        {
+            "groupId"       : 1,
+            "groupName"     : "FAMILY",
+            "description"   : "This group belongs to Family",
+            "contacts"      : [
+                {
+                    "contactId"     :  101,
+                    "firstName"     : "Manikanta",
+                    "lastName"      : "Nagireddy",
+                    "mobileNumber"  : 9505411229,
+                    "mailId"        : "16211a0278@bvrit.ac.in",
+                    "dateOfBirth"   : "07-04-1998",
+                    "doorNo"        : 416,
+                    "appartmentName": "Himairi Saroja Hills",
+                    "street"        : "Pragathi nagar",
+                    "city"          : "Hyderabad",
+                    "country"       : "India",
+                    "pincode"       : 500072
+                },
+                {
+                     "contactId"     : 102,
+                     "firstName"     : "Chaitanya",
+                     "lastName"      : "Parimi",
+                     "mobileNumber"  : 9505411992,
+                     "mailId"        : "16211a0280@bvrit.ac.in",
+                     "dateOfBirth"   : "21-02-1998",
+                     "doorNo"        : 417,
+                     "appartmentName": "Himairi Saroja Hills",
+                     "street"        : "Pragathi nagar",
+                     "city"          : "Hyderabad",
+                     "country"       : "India",
+                     "pincode"       : 500072
+                },
+                {
+                    "contactId"      : 103,
+                     "firstName"     : "Bhargav",
+                     "lastName"      : "Vemuri",
+                     "mobileNumber"  : 9505411995,
+                     "mailId"        : "16211a02A0@bvrit.ac.in",
+                     "dateOfBirth"   : "21-03-1998",
+                     "doorNo"        : 418,
+                     "appartmentName": "Himairi Saroja Hills",
+                     "street"        : "Pragathi nagar",
+                     "city"          : "Hyderabad",
+                     "country"       : "India",
+                     "pincode"       : 500072
+                } 
+
+            ]
+        },
+        {
+            "groupId"       :  2,
+            "groupName"     : "SCHOOL",
+            "description"   : "This group belongs to School",
+            "contacts"      : [
+                {
+                    "contactId"     :  101,
+                    "firstName"     : "Manikanta",
+                    "lastName"      : "Nagireddy",
+                    "mobileNumber"  : 9505411224,
+                    "mailId"        : "16211a0278@bvrit.ac.in",
+                    "dateOfBirth"   : "07-04-1998",
+                    "doorNo"        : 416,
+                    "appartmentName": "Himairi Saroja Hills",
+                    "street"        : "Pragathi nagar",
+                    "city"          : "Hyderabad",
+                    "country"       : "India",
+                    "pincode"       : 500072
+                },
+                {
+                    "contactId"      : 102,
+                     "firstName"     : "Bhargav",
+                     "lastName"      : "Vemuri",
+                     "mobileNumber"  : 9704529567,
+                     "mailId"        : "16211a02A0@bvrit.ac.in",
+                     "dateOfBirth"   : "21-03-1998",
+                     "doorNo"        : 418,
+                     "appartmentName": "Himairi Saroja Hills",
+                     "street"        : "Pragathi nagar",
+                     "city"          : "Hyderabad",
+                     "country"       : "India",
+                     "pincode"       : 500072
+                }
+            ]
+        }
+
+    ]
+
+}

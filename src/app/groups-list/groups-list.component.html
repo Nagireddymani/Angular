@@ -1,0 +1,17 @@
+<body>
+    <table class="table">
+            <tr>
+                <th>Group Id </th>
+                <th>Group Name</th>
+                <th>Description</th>
+                <th colspan="2">Contact Action</th>
+            </tr>
+            <tr *ngFor="let group of dataList,index as i">
+                <td>{{group.groupId}}</td>
+                <td>{{group.groupName}}</td>
+                <td>{{group.description}}</td>
+                <td><button  type="button" (click)="addContact(i)"  class="btn btn-info" >Add</button></td>
+                <td><button  type="button" (click)="viewContact(i)" class="btn btn-info" >View</button></td>
+            </tr>
+    </table>
+</body>    

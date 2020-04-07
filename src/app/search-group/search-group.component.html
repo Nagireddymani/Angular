@@ -1,0 +1,33 @@
+<body>
+<div id="searchBar">
+    <table>
+        <tr>
+            <td><label><span>Enter Group ID</span>  </label></td>
+            <td><input type="search" #searchText name="searchField" class="form-control" ngModule></td>
+            <td><button type="button" (click)="searchGroup(searchText.value)" class ="btn btn-info">Search</button></td>
+        </tr>
+    </table>
+</div>
+
+<div *ngIf="view">
+    <h3>Group Details</h3>
+    <table class="table">
+        <tr>
+            <td><strong>Group ID</strong> </td>
+            <td>{{group.groupId}}</td>
+        </tr>
+        <tr>
+            <td><strong>Group Name</strong> </td>
+            <td>{{group.groupName}}</td>
+        </tr>
+        <tr>
+            <td><strong>Description</strong></td>
+            <td>{{group.description}}</td>
+        </tr>
+        <tr>
+            <td><strong>No of Contacts</strong></td>
+            <td>{{noOfContacts}}</td>
+        </tr>
+    </table>
+</div>
+</body>

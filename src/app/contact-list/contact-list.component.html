@@ -1,0 +1,25 @@
+<div id="show">
+<table class="table">
+     <tr>
+         <th>Contact Id</th>
+         <th>FirstName</th>
+         <th>LastName</th>
+         <th>MobileNumber</th>
+         <th>Email</th>
+         <th>Address</th>
+         <th>Update</th>
+         <th>Delete</th>
+     </tr>
+     <tr *ngFor="let contact of contactList,index as i">
+        <td>{{contact.contactId}}</td>
+        <td>{{contact.firstName}}</td>
+        <td>{{contact.lastName}}</td>
+        <td>{{contact.mobileNumber}}</td>
+        <td>{{contact.mailId}}</td>
+        <td>{{contact.doorNo}},{{contact.appartmentName}},{{contact.street}},
+            <br>{{contact.city}},{{contact.country}},{{contact.pincode}}</td>
+        <td><button type="button" (click)="updateContact(i)" class="btn btn-info">Update</button></td>
+        <td><button type="button" (click)="deleteContact(i)" class="btn btn-info">Delete</button></td>
+     </tr>
+</table>
+</div>

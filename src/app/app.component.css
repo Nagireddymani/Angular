@@ -1,0 +1,29 @@
+header{
+
+    background-color:dodgerblue;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+#list
+{
+    float: center;
+    padding-top: 10px;
+}
+a{
+    font-family: sans-serif;
+    color:black;
+}
+ #body
+{
+    background-image: url("/assets/background.png");
+    width: 100%;
+    height: 500%;
+} 
+#show
+{
+    background-image: url("/assets/background.png");
+    width: 101%;
+    height: 500%;
+}

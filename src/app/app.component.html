@@ -1,0 +1,36 @@
+
+       <header class="container-fluid">
+       <div class="row" style="height: fit-content;">
+              <div class="col-md-4">
+                     <br>
+                     <h5>Google Play Store</h5>
+              </div>
+              <div class="col-md-3">
+                     <br>
+                     <h2>   GROUPS  APPLICATION</h2>
+                     <br>                   
+              </div>
+              <div class="col-md-2"><b><br><span> {{currentDate}} <br> {{currentTime}}</span></b></div>
+              <div id="list" class="col-md-3">
+                     <br>
+                     <b>
+                     <u>
+                            <ul>    
+                                   <li><a routerLink="group-view">List of Groups | </a> </li>
+                                   <li><a routerLink="search-group">Seach Group</a></li>
+                            </ul>
+                     </u>
+                     </b>
+              </div>
+       </div>
+
+       </header>
+
+<div id="body"class="container-fluid" >
+       <div class="row" >
+              <div class="col-md-12" >
+                     <router-outlet></router-outlet> 
+              </div>
+
+       </div>
+</div>      
